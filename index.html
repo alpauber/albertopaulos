@@ -25,6 +25,8 @@
     footer small { color:var(--m); }
     @media (max-width:640px){ .links{ grid-template-columns:1fr; } .vidgrid{ grid-template-columns:1fr; } h1{font-size:26px;} }
   </style>
+
+  <!-- Datos estructurados (Person) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -43,13 +45,6 @@
   </script>
 </head>
 <body>
-
-  <!-- Imagen de cabecera (sin título ni pie) -->
-  <div style="width:100%;overflow:hidden">
-    <img src="/grabacion.jpg" alt="Dirección artística en sesión de grabación"
-         style="width:100%;height:360px;object-fit:cover;display:block">
-  </div>
-
   <header>
     <h1>Alberto Paulos — violonchelo barroco y dirección artística</h1>
     <p class="muted">Grabaciones, escena y formación.</p>
@@ -61,10 +56,16 @@
       <p>Violonchelista formado en Europa y EEUU, especialista en interpretación historicista, educación auditiva aplicada y dirección artística de grabaciones profesionales con experiencia internacional.</p>
     </section>
 
+    <!-- FOTO: márgenes “originales”, entre Bio y Enlaces -->
+    <section class="card">
+      <img src="/grabacion.jpg" alt="Dirección artística en sesión de grabación"
+           style="width:100%;height:auto;border-radius:12px;border:1px solid #e5e7eb">
+    </section>
+
     <section class="card">
       <h2>Enlaces</h2>
       <div class="links">
-        <a href="https://www.discogs.com/artist/3104974-Alberto-Paulos-Berges" rel="noopener">Discogs — perfil</a>
+        <!-- Quitado: Discogs — perfil -->
         <a href="https://www.discogs.com/release/3951766-The-Diesel-Dogs-Antihumanism" rel="noopener">Discogs — crédito (violonchelo)</a>
         <a href="https://laspagna.es/en/la-spagna/" rel="noopener">La Spagna — agrupación</a>
         <a href="https://www.abc.es/espana/castilla-la-mancha/toledo/nuevo-exito-shpera-antiqva-201011290000_noticia.html" rel="noopener">ABC (2010) — crónica</a>
@@ -76,11 +77,24 @@
     <section class="card">
       <h2>Vídeos</h2>
       <div class="vidgrid">
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/wqsgIKGV4Nk" title="Vídeo 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/auoJWp_TLJA" title="Vídeo 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/wqsgIKGV4Nk" title="Vídeo 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/auoJWp_TLJA" title="Vídeo 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
       <div style="margin-top:16px">
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/25grVeKoAXI" title="Vídeo 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="frame">
+          <!-- Sustitución del último por el vídeo inicial (BIRN): J5qk3WJinsM -->
+          <iframe src="https://www.youtube-nocookie.com/embed/J5qk3WJinsM" title="Vídeo 3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 
